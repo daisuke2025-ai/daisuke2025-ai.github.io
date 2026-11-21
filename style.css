@@ -277,3 +277,22 @@ h1 {
   max-width: 100%;
   box-sizing: border-box;
 }
+
+/* すべてのボタンでダブルタップ拡大を防止 */
+button {
+  touch-action: manipulation;
+
+  /* 長押しによる文字選択を防止 */
+  user-select: none;
+  -webkit-user-select: none;
+
+  /* タップ時のハイライトを消す */
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* ボタン内の画像も選択させない */
+button img {
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+}
