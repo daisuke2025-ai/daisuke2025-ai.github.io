@@ -235,3 +235,45 @@ h1 {
   display: block;
   margin: 12px auto 0;
 }
+
+/* 自動増殖装置の購入ボタン */
+#autoBuyButton {
+  padding: 15px 30px;
+  font-size: 18px;
+  background: #e9a85d;
+  color: #333;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* ボタンにマウスを乗せたとき */
+#autoBuyButton:hover:not(:disabled) {
+  background: #d98d36;
+}
+
+/* 購入できないとき */
+#autoBuyButton:disabled {
+  background: #ccc;
+  color: #777;
+  cursor: not-allowed;
+}
+
+/* ゲームの連打による画面拡大を防止 */
+#manulButton {
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* ボタン内の画像も選択されないようにする */
+#manulButton img {
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+}
+#manulButton {
+  max-width: 100%;
+  box-sizing: border-box;
+}
