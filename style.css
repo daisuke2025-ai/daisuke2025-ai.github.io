@@ -1,0 +1,237 @@
+body {
+  margin: 0;
+  background-image: url("manul-background.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: sans-serif;
+  text-align: center;
+  color: #333;
+}
+
+main {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 25px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+#manulButton {
+  font-size: 100px;
+  background: white;
+  border: 3px solid #888;
+  border-radius: 30px;
+  padding: 20px 40px;
+  cursor: pointer;
+  transition: transform 0.1s;
+}
+
+#manulButton:active {
+  transform: scale(0.9);
+}
+
+.shop {
+  margin-top: 30px;
+  padding: 20px;
+  background: white;
+  border: 2px solid #d4b896;
+  border-radius: 15px;
+}
+
+#buyButton {
+  padding: 12px 24px;
+  font-size: 18px;
+  background: #e9a85d;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#buyButton:hover:not(:disabled) {
+  background: #d98d36;
+}
+
+#buyButton:disabled {
+  background: #ccc;
+  color: #777;
+  cursor: not-allowed;
+}
+
+#message {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #806030;
+}
+#resetButton {
+  margin-top: 15px;
+  padding: 10px 25px;
+  background: #777;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#resetButton:hover {
+  background: #555;
+}
+#manulButton {
+  padding: 0;
+  overflow: hidden;
+  border-radius: 25px;
+}
+
+#manulButton img {
+  display: block;
+  width: 280px;
+  max-width: 100%;
+  height: auto;
+}
+
+#manulButton:active {
+  transform: scale(0.94);
+}
+
+.tap-cat {
+  position: fixed;
+  width: 75px;
+  height: 75px;
+  object-fit: contain;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  animation: catPop 0.5s ease-out forwards;
+}
+
+@keyframes catPop {
+  0% {
+    opacity: 0;
+    scale: 0.4;
+  }
+  25% {
+    opacity: 1;
+    scale: 1.2;
+  }
+  70% {
+    opacity: 1;
+    scale: 1;
+  }
+  100% {
+    opacity: 0;
+    scale: 0.8;
+  }
+}
+#bgmButton {
+  padding: 12px 24px;
+  margin-top: 20px;
+  background: #8fbf88;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#bgmButton:hover {
+  background: #70a969;
+}
+
+#settingsButton {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #8fbf88;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#settingsButton:hover {
+  background: #70a969;
+}
+
+.sound-settings {
+  margin-top: 15px;
+  padding: 20px;
+  background: #fffaf0;
+  border: 2px solid #d4b896;
+  border-radius: 15px;
+  text-align: left;
+}
+
+.sound-settings[hidden] {
+  display: none;
+}
+
+.sound-settings h2 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+.setting-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+#bgmButton {
+  padding: 10px 20px;
+  background: #8fbf88;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.volume-setting {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+#bgmVolume {
+  flex: 1;
+  min-width: 0;
+  accent-color: #70a969;
+}
+
+#volumeValue {
+  min-width: 45px;
+  text-align: right;
+}
+
+.settings-note {
+  margin-bottom: 0;
+  color: #777;
+  font-size: 12px;
+}
+#settingsButton {
+  display: block;
+  margin: 15px auto 8px;
+}
+
+#resetButton {
+  display: block;
+  margin: 8px auto 0;
+}
+#settingsButton {
+  display: block;
+  margin: 15px auto 8px;
+}
+
+.sound-settings {
+  margin: 10px auto;
+}
+
+#resetButton {
+  display: block;
+  margin: 12px auto 0;
+}
