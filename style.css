@@ -296,3 +296,22 @@ button img {
   -webkit-user-select: none;
   -webkit-user-drag: none;
 }
+
+/* 購入できるときは黒文字 */
+#buyButton:not(:disabled),
+#autoBuyButton:not(:disabled) {
+  color: #000;
+}
+
+/* 購入できないときはグレー文字 */
+#buyButton:disabled,
+#autoBuyButton:disabled {
+  color: #777;
+}
+/* スマホ向けのレイアウト調整 */
+@media (max-width: 600px) {
+  main {
+    margin: 20px 10px;
+    padding: 15px;
+  }
+}
